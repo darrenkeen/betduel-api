@@ -141,7 +141,7 @@ app.get('/betslip', (req, res) => {
 
       return;
     }
-    const data = rows.length > 0 ? getBetslipData(rows, true) : null;
+    const data = rows.length > 0 ? getBetslipData(rows, true) : [];
     res.json({
       message: 'success',
       data,
